@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {text-align: center;}
+        td {text-align: center;}
+        table {
+        border-collapse: separate;
+        
+        border-spacing: 20px 0;
+      }
+      th {
+        background-color: #125c49;
+        color: rgb(255, 243, 79)
+        
+      }
+      tr{
+        border: 1px solid black;
+      }
+      th,td {
+        width: 50px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+        font-weight: bold;
+      }
+        </style>
+
+
+
+
+</head>
+<body style="background-color:rgb(227, 233, 231);">
+    
+    <h1>GUVI ZENCLASS FULL STACK DEVELOPMENT - BOOTCAMP</h1>   
+    <h2>LEARNING JAVASCRIPT</h2>
+    <h2>DIFFERENCE BETWEEN HTTP1.1 AND HTTP2</h2>
+    <h3><em><b> Myilvaganan.S --> myilsmp@gmail.com</b> </em></h3>
+
+    <p>
+    DAY-02--Task-01--Q-02 --> Difference Between HTTP/1.1 and HTTP/2
+    </p>
+
+
+    <table style="width:100%">
+        <tr>
+          <th>DIFFERENCE IN</th>
+          <th>HTTP/1.1</th>
+          <th>HTTP/2</th>
+        </tr>
+        <tr>
+          <td>YEAR</td>
+          <td>1997</td>
+          <td>2015</td>
+        </tr>
+        <tr>
+            <td>PROTOCOL TYPE</td>
+            <td>Text based protocol that is in the Human- readable form.</td>
+            <td>It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). 
+                Needs to be converted back from binary in order to read it.</td>
+          </tr>
+        <tr>
+          <td>KEY FEATURES</td>
+          <td>It supports the resusing of connection, which means that multiple requets and responses could be there in
+              evry TCP (Transfer Control Protocol) connection.              
+            Also, pipelining where several resourcescan be reuqested at once from server,
+            but it was hard to impliment due to Head-Of-Line Blocking issues.            
+            
+        
+          </td>
+          <td> It uses the method of multiplexing(intiates multiple requests in parallel) over a single TCP connection resources to
+            be delivered are interleaved and arrive at the client almost at the same time. 
+            It is done using streams which can be prioritized, can have dependencies and individual
+            flow control.
+            It also provides "Server Push" that send data priorily although client has not yet requested.
+      .</td>
+        </tr>
+        <tr>
+            <td>STATUS CODE</td>
+            <td>Introduces a warning header field to carry additional information about the 
+                status of a message. Can define 24 status codes, error reporting is quicker 
+                and more efficient.</td>
+            <td>Underlying semantics of HTTP such as headers, status codes remains the same.</td>
+          </tr>
+          <tr>
+            <td>AUTHENTICATION MECHANISM</td>
+            <td>It uses digest authentication, NTLM authentication.
+                Both are secured mechanism.
+            </td>
+            <td>Security concerns from previous versions will remains same in HTTP/2, but it adds
+             new TLS features like connection error of type Inadequate_Security.</td>
+          </tr>
+          <tr>
+            <td>CACHING</td>
+            <td>Expands on the caching support by using additional headers like cache-control,
+                 conditional headers like If-Match and by using entity tags.</td>
+            <td>It does not change much in terms of caching. With the server push feature if the client finds 
+                the resources are already present in the cache, it can cancel the pushed stream.</td>
+          </tr>
+          <tr>
+            <td>PERFORMANCE OPTIMIZATION</td>
+            <td>Spriting, concatenating, inlining, domain sharding are some of the optimizations used </td>
+            <td>Removes the need for unnecessary optimization hacks.</td>
+          </tr>
+          
+          <tr>
+            <td>SECURITY</td>
+            <td>SSL is not required but recommended. Digest authentication used in HTTP1.1 is an improvement over HTTP1.0. HTTPS uses SSL/TLS for secure encrypted communication.</td>
+            <td>Though security is still not mandatory, it is mostly encrypted (though it is not enforced) since almost all clients require traffic to be encrypted. It also has some minimum standards, 
+                such as minimum key size for encryption. TLS 1.2 etc.</td>
+          </tr>
+            
+          <tr>
+            <td>WEB TRAFFIC</td>
+            <td>HTTP/1.1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0.
+                 However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously 
+                 by using multiple domains),
+                 connection reuse and pipelining, there is an increased risk of network congestion.</td>
+            <td>HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time by a greater
+                 margin along with being less sensitive to network delays.</td>
+          </tr>
+          <tr>
+            <td>HEADER COMPRESSION</td>
+            <td>Headers are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire. </td>
+            <td>Header compression is included by default in HTTP/2 using HPACK.</td>
+          </tr>
+
+
+      </table>
+<br>
+<br>
+
+
+
+<p style="text-align:center;"><b>-----------------------THIS IS THE END OF THE ANSWER -----------------------</b></p>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
