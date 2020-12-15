@@ -9,4 +9,9 @@ request.onload = function (){
             for( let i in data){
                 console.log(data[i].name);
             }
+
+//printing all the country flag URLs' using for...in..loop
+ for( let i in data){
+                console.log(data[i].flag);
+            }
 }
