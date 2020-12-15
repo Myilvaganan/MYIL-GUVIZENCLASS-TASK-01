@@ -10,6 +10,7 @@ FILE NAME: TASK-1-Q-3 COPY BY VALUE AND COPY BY REFERENCE.html --> Write a write
 
 FILE NAME: TASK-1-Q-4 COPY BY VALUE OF COMPOSITE.html -->How to copy by value a composite datatype (array+objects)
 
+FILE NAME: TASK-1-Q-5 JSON PROBLEMS--> problems on JSON objets
 
-
+FILE NAME: TASK-1-Q-5.1 js JSON PROBLEMS--> problems on JSON objets javascript files
 
